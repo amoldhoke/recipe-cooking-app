@@ -1,11 +1,11 @@
-version: '3.11'
+version: '3.11 '
 
 services:
   app:
     build:
       context: .
       args:
-        - Dev=true
+        - DEV=true
     ports:
       - 8000:8000
     volumes:
