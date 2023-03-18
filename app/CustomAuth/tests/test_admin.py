@@ -14,7 +14,7 @@ class AdminSiteTests(TestCase):
         """Create user and client."""
         self.client = Client()
         self.admin_user = get_user_model().objects.create_superuser(
-            email='admin@exmaple.com',
+            email='admin@example.com',
             password='testpass123',
         )
         self.client.force_login(self.admin_user)
@@ -24,7 +24,7 @@ class AdminSiteTests(TestCase):
             name='Test User'
         )
 
-    def test_users_list(self):
+    def test_users_lists(self):
         """Test that users are listed on page."""
         url = reverse('admin:CustomAuth_user_changelist')
         res = self.client.get(url)
@@ -33,7 +33,7 @@ class AdminSiteTests(TestCase):
         self.assertContains(res, self.user.email)
 
     def test_edit_user_page(self):
-        """Test the edit page works."""
+        """Test the edit user page works."""
         url = reverse('admin:CustomAuth_user_change', args=[self.user.id])
         res = self.client.get(url)
 
