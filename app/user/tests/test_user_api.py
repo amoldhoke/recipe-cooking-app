@@ -7,6 +7,7 @@ from django.urls import reverse
 
 from rest_framework.test import APIClient
 from rest_framework import status
+from rest_framework.authtoken.models import Token
 
 
 CREATE_USER_URL = reverse('user:create')
@@ -107,10 +108,6 @@ class PublicUserApiTests(TestCase):
         res = self.client.get(ME_URL)
 
         self.assertEqual(res.status_code, status.HTTP_401_UNAUTHORIZED)
-
-
-from rest_framework.test import APIClient
-from rest_framework.authtoken.models import Token
 
 
 class PrivateUserApiTests(TestCase):
