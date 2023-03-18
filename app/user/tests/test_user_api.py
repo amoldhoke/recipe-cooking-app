@@ -121,7 +121,7 @@ class PrivateUserApiTests(TestCase):
         )
         self.token = Token.objects.create(user=self.user)
         self.client = APIClient()
-        self.client.credentials(HTTP_AUTHORIZATION=f'Token {self.token.key}')
+        self.client.force_authenticate(user=self.user)
 
     def test_retrive_profile_success(self):
         """Test retrieving profile for logged in user."""
