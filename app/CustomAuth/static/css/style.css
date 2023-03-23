@@ -9,26 +9,25 @@ html, body {
 
 .box {
     position: absolute;
-    width: 550px;
-    height: 400px;
+    width: 30%;
+    height: 39%;
     border-radius: 10px;
     background-color: rgb(126 129 131);
     box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2);
     opacity: 0.9;
     right: 90px;
     bottom: 75px;
-    margin-left: 10%;
+    padding: 1%;
   }
 
   .line::after {
     content: "";
     position: absolute;
-    top: 16%;
+    top: 21%;
     bottom: 0;
     left: 50%;
     border-left: 1px solid black;
-    padding-left: 5%;
-    padding-right: 5%;
+
   }
 
   #logo {
@@ -265,8 +264,11 @@ html, body {
 
 @media(max-width: 575px) {
     .box {
-        width: 370px;
-        height: 450px;
+        width: 90%;
+        height: 70%;
+        right: 5%;
+        bottom: 1%;
+        padding: 5%;
     }
 
     #Character {
@@ -274,103 +276,44 @@ html, body {
     }
 
     #logo {
+        float: none;
         display: block;
-        margin-left: 10%;
-        margin-right: 16%;
-        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 20%;
         width: 270px;
         height: 150px;
       }
+
+    #header {
+        margin-top: 2px;
+    }
 
     .line::after {
         display: none;
     }
 
     .left-margin {
-        margin-left: 25%;
+        margin-left: 22%;
+        margin-right: 20%;
         margin-top: 10%;
     }
 
     .left-margin1 {
-        margin-left: 28%;
+        margin-left: 27%;
+        margin-right: 24%;
         margin-top: 10%;
     }
 
     .left-margin2 {
         margin-left: 31%;
+        margin-right: 26%;
         margin-top: 10%;
     }
 
     .left-margin3 {
         margin-left: 30%;
+        margin-right: 20%;
         margin-top: 10%;
     }
 }
-
-/* -------------------------------------------------------------- */
-
-@media(max-width: 414px) {
-    .box {
-        width: 375px;
-        height: 70%;
-        right: 20px;
-        bottom: 15px;
-        }
-
-    .left-margin {
-        margin-left: 27%;
-    }
-
-    .left-margin1 {
-        margin-left: 30%;
-    }
-
-    .left-margin2 {
-         margin-left: 32%;
-    }
-
-    .left-margin3 {
-        margin-left: 32%;
-    }
-}
-
-/* -------------------------------------------------------------- */
-
-@media(max-width: 393px) {
-    .box {
-        width: 350px;
-        height: 70%;
-        right: 20px;
-        bottom: 15px;
-        }
-    }
-
-/* -------------------------------------------------------------- */
-
-@media(max-width: 375px) {
-    .box {
-        width: 335px;
-        height: 450px;
-        }
-    }
-
-/* -------------------------------------------------------------- */
-
-@media(max-width: 360px) {
-    .box {
-        width: 320px;
-        height: 500px;
-        }
-    }
-
-/* -------------------------------------------------------------- */
-
-@media(max-width: 300px) {
-    .box {
-        width: 260px;
-        height: 390px;
-        right: 10px;
-        bottom: 7px;
-        }
-    }
