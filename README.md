@@ -17,7 +17,23 @@ The Recipe API is designed to be flexible and customizable, so that users can ea
 - Tag ingredients with relevant labels such as "vegetarian", "gluten-free", "spicy"
 - Flexible and customizable for specific needs
 
+
+# Installation
+To install the project, follow these steps:
+
+1. Clone the repository
+2. Install the dependencies by running pip install -r requirements.txt
+3. Create a .env file and add your environment variables
+4. Run migrations with python manage.py migrate
+5. Start the server with python manage.py runserver
+
+
 ## Usage
+
+Once the server is running, you can access the web application at http://127.0.0.1 and the API at http://127.0.0.1/api/.
+
+Use the registration form to submit resumes as a student, and login as an admin or staff member to access the relevant panels. Staff members can only access approved resumes and can send emails to selected candidates.
+
 
 ### To use app
 
